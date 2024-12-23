@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Industry Inc';
+    src: url('../assets/fonts/IndustryInc-Base.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../assets/fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'Industry Inc', sans-serif;
+    font-weight: bold; /* Para garantir que o peso da fonte esteja correto */
+}
+
+h4, h5, h6 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: bold; /* Para subtítulos */
+}
+
+p, span, ul, li, a {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: normal; /* Para corpo de texto */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #2D2926;
+}
+
+/* Container para centralizar o botão do menu */
+.header {
+    width: 100%;
+    height: 180px;
+    background: #2D2926;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.logo {
+    max-width: 220px;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        display: none; /* Esconde a logo em telas menores que 700px */
+    }
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.menu-btn__burger {
+    width: 30px;
+    height: 3px;
+    background: #D9D9D6;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #D9D9D6;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(10px);
+}
+
+/* Menu fullscreen */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(45, 41, 38, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+}
+
+.fullscreen-menu.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.fullscreen-menu ul li {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.fullscreen-menu.active ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fullscreen-menu ul li a {
+    color: #D9D9D6;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.fullscreen-menu ul li a:hover {
+    color: #D9D9D6;
+}
+
+.fullscreen-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #D9D9D6;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.fullscreen-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* Botão fechar */
+.close-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #D9D9D6;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(180deg);
+}
+
+/* Delay na animação dos itens do menu */
+.fullscreen-menu ul li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.fullscreen-menu ul li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.fullscreen-menu ul li:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.fullscreen-menu ul li:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+
+
+/*Carousel Responsivo*/
+
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #D9D9D6;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(45, 41, 38, 0.5);
+    color: #D9D9D6;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(115, 107, 116, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #D9D9D6;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isso fará a imagem cobrir todo o espaço mantendo a proporção */
+}
+
+
+/* logomarca do about */
+
+.about {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.about img {
+    /*padding-top: 1cap;*/
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 150px auto;
+}
+
+.about figcaption {
+    padding: 80px 35% 120px 35%;
+    color: #D9D9D6;
+    font-size: 1.3rem;
+}
+
+.about p {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Mural de imagens */
+
+.mural-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 120px;
+}
+
+
+.mural-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.mural-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Tamanhos dos items */
+.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.medium {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.vertical {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .mural-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medium, .vertical {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .mural-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .small, .medium, .vertical {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+
+/* Rodapé */
+
+/* Rodapé */
+.footer {
+    background-color: #912F46;
+    color: #D9D9D6;
+    padding: 40px 20px;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.contact-info, .social-links {
+    flex: 2;
+}
+
+.contact-info h3, .social-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.contact-info a {
+    display: block;
+    color: #D9D9D6;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.8;
+}
+
+.copyright {
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .contact-info a {
+        text-align: center;
+    }
+
+    .social-links h3 {
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-info h3, .social-links h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 320px) {
+    .footer-title {
+        font-size: 1.3rem;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .contact-info a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .social-links {
+        text-align: left;
+    }
+}
+
+
+/* botão flutuante */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    background-color: #22c15e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Torna o ícone branco */
+}
+
+.whatsapp-float span {
+    font-weight: 500;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 50px;
+        right: 50px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+    .whatsapp-float span {
+        display: none;
+    }
+    
+    .whatsapp-float .whatsapp-icon {
+        margin: 0;
+    }
+}
