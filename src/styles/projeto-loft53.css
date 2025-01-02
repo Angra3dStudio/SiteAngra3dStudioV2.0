@@ -104,3 +104,131 @@ section {
     align-items: center;
     flex-wrap: wrap;
 }
+
+/* Fim da parte rosa */
+
+/*--------------------------------------------------*/
+
+/* Container principal */
+.project-loft53-sec3 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+/* Conteúdo de texto */
+.project-loft53-content-reverse {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.project-loft53-content-reverse h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d9d9d6;  /* Cor cinza adicionada */
+}
+
+.project-loft53-content-reverse p {
+    line-height: 1.6;
+    color: #d9d9d6;  /* Cor cinza adicionada */
+}
+
+/* Imagem */
+.project-loft53-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.project-loft53-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .project-loft53-sec3 {
+        flex-direction: column-reverse;
+    }
+
+    .project-loft53-content-reverse,
+    .project-loft53-image {
+        width: 100%;
+    }
+}
+
+/* Parte vinho do site */
+
+.project-content-vinho{
+    background-color: #912f46;
+}
+
+/*---------------------------------------*/
+
+/* parte final Espaço para Sonhar */
+
+/* Estilo do texto */
+.project-loft53-textcenter {
+    text-align: center;
+    color: #d9d9d6; 
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-loft53-p-textcenter {
+    text-align: center;
+    color: #d9d9d6; 
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Container das três imagens */
+.project-loft53-image-triple {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* Cada container de imagem individual */
+.project-loft53-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+/* Estilo das imagens */
+.project-loft53-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .project-loft53-image-triple {
+        gap: 1rem;
+    }
+    
+    .project-loft53-image {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-loft53-image {
+        min-width: 100%;
+    }
+    
+    .project-loft53-image-triple {
+        flex-direction: column;
+        align-items: center;
+    }
+}
