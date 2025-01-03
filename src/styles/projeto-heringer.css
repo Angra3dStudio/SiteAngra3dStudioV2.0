@@ -1,0 +1,234 @@
+body {
+    padding-top: 280px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* titulo da seção */
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #D9D9D6;
+    margin: 60px 0 80px;
+    font-weight: 600;
+    position: relative;
+    background-color: #2D2926;
+}
+
+
+/* Estilo base da seção */
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título principal */
+.project-heringer-title {
+    margin-bottom: 2rem;
+    background-color: #2D2926;
+}
+
+.project-heringer-title h2 {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    color: #f2555a;
+    text-align: center;
+    padding-bottom: 80px; 
+    background-color: #2D2926; /* Cor vermelha adicionada */
+}
+
+/* Container principal */
+.project-heringer-sec1 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Conteúdo de texto */
+.project-heringer-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.project-heringer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d9d9d6;  /* Cor cinza adicionada */
+}
+
+.project-heringer-content p {
+    line-height: 1.6;
+    color: #d9d9d6;  /* Cor cinza adicionada */
+}
+
+/* Imagem */
+.project-heringer-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.project-heringer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .project-heringer-sec1 {
+        flex-direction: column;
+    }
+
+    .project-heringer-content,
+    .project-heringer-image {
+        width: 100%;
+    }
+}
+
+/* Parte rosa do site */
+.project-content-rosa{
+    background-color: #f2555a;
+}
+
+/* Container de imagens */
+.project-heringer-sec2 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Fim da parte rosa */
+
+/*--------------------------------------------------*/
+
+/* Container principal */
+.project-heringer-sec3 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+/* Conteúdo de texto */
+.project-heringer-content-reverse {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.project-heringer-content-reverse h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d9d9d6;  /* Cor cinza adicionada */
+}
+
+.project-heringer-content-reverse p {
+    line-height: 1.6;
+    color: #d9d9d6;  /* Cor cinza adicionada */
+}
+
+/* Imagem */
+.project-heringer-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.project-heringer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .project-heringer-sec3 {
+        flex-direction: column-reverse;
+    }
+
+    .project-heringer-content-reverse,
+    .project-heringer-image {
+        width: 100%;
+    }
+}
+
+/* Parte vinho do site */
+
+.project-content-vinho{
+    background-color: #912f46;
+}
+
+/*---------------------------------------*/
+
+/* parte final Espaço para Sonhar */
+
+/* Estilo do texto */
+.project-heringer-textcenter {
+    text-align: center;
+    color: #d9d9d6; 
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-heringer-p-textcenter {
+    text-align: center;
+    color: #d9d9d6; 
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Container das três imagens */
+.project-heringer-image-triple {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* Cada container de imagem individual */
+.project-heringer-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+/* Estilo das imagens */
+.project-heringer-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .project-heringer-image-triple {
+        gap: 1rem;
+    }
+    
+    .project-heringer-image {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-heringer-image {
+        min-width: 100%;
+    }
+    
+    .project-heringer-image-triple {
+        flex-direction: column;
+        align-items: center;
+    }
+}
