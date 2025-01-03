@@ -1,31 +1,20 @@
 body {
-    padding-top: 280px;
+    padding-top: 220px;
     width: 100%;
     height: 100%;
     
 }
 
-
-/* titulo da seção */
-
-.section-title {
-    text-align: center;
-    font-size: 3rem;
-    color: #D9D9D6;
-    margin: 60px 0 80px;
-    font-weight: 600;
-    position: relative;
-    background-color: #2D2926;
-}
-
-
 /* Estilo base da seção */
 section {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 3rem 10%;
+    border: 1px solid blue;
 }
 
+.image-center{
+    justify-content: center;
+    display: flex;
+}
 /* Título principal */
 .project-loft53-title {
     margin-bottom: 2rem;
@@ -38,32 +27,38 @@ section {
     color: #f2555a;
     text-align: center;
     padding-bottom: 80px; 
-    background-color: #2D2926; /* Cor vermelha adicionada */
-}
+    background-color: #2D2926;
 
+}
 /* Container principal */
-.project-loft53-sec1 {
+.project-loft53-section-textimg {
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    gap: 1rem;
+    align-items: stretch;
     flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    border: 2px solid pink;
 }
 
 /* Conteúdo de texto */
 .project-loft53-content {
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem;
+    flex: 0 1 400px;
+    min-width: 200px;
+    padding: 0.5rem;
+    padding-top: 10%;
+    text-align: justify;
 }
 
 .project-loft53-content h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: #d9d9d6;  /* Cor cinza adicionada */
 }
 
 .project-loft53-content p {
-    line-height: 1.6;
+    line-height: 1.4;
     color: #d9d9d6;  /* Cor cinza adicionada */
 }
 
@@ -74,22 +69,33 @@ section {
     padding: 1rem;
 }
 
+.project-loft53-image-right {
+    max-width: 480px;
+    max-height: 600px;
+}
+
+.project-loft53-image-dupla {
+    max-width: 606px;
+    max-height: 720px;
+}
+
+.project-loft53-image-center{
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid red;
+    padding: 1rem;
+}
+
+.project-loft53-image-left {
+    max-width: 598px;
+    max-height: 640px;
+}
+
 .project-loft53-image img {
     width: 100%;
     height: auto;
-    display: block;
-}
-
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    .project-loft53-sec1 {
-        flex-direction: column;
-    }
-
-    .project-loft53-content,
-    .project-loft53-image {
-        width: 100%;
-    }
+    display: inline-block;
 }
 
 /* Parte rosa do site */
@@ -98,11 +104,13 @@ section {
 }
 
 /* Container de imagens */
-.project-loft53-sec2 {
+.project-loft53-imgdupla {
+    justify-content: space-around;
     display: flex;
     gap: 2rem;
     align-items: center;
     flex-wrap: wrap;
+    border: 2px solid white;
 }
 
 /* Fim da parte rosa */
@@ -110,18 +118,20 @@ section {
 /*--------------------------------------------------*/
 
 /* Container principal */
-.project-loft53-sec3 {
+.project-loft53-section-imgtext {
     display: flex;
     gap: 2rem;
     align-items: center;
     flex-wrap: wrap-reverse;
+    border: 2px solid palegreen;
 }
 
 /* Conteúdo de texto */
 .project-loft53-content-reverse {
     flex: 1;
     min-width: 300px;
-    padding: 1rem;
+    padding: 1rem 10%;
+    text-align: justify;
 }
 
 .project-loft53-content-reverse h3 {
@@ -148,18 +158,6 @@ section {
     display: block;
 }
 
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    .project-loft53-sec3 {
-        flex-direction: column-reverse;
-    }
-
-    .project-loft53-content-reverse,
-    .project-loft53-image {
-        width: 100%;
-    }
-}
-
 /* Parte vinho do site */
 
 .project-content-vinho{
@@ -181,7 +179,6 @@ section {
 .project-loft53-p-textcenter {
     text-align: center;
     color: #d9d9d6; 
-    max-width: 800px;
     line-height: 1.6;
     padding: 0 1rem;
 }
@@ -194,6 +191,9 @@ section {
     padding: 1rem;
     max-width: 1200px;
     flex-wrap: wrap;
+    max-width: 400px;
+    max-height: 432px;
+    border: 2px solid yellow;
 }
 
 /* Cada container de imagem individual */
@@ -211,24 +211,13 @@ section {
     object-fit: cover;
 }
 
-/* Responsividade */
-@media (max-width: 992px) {
-    .project-loft53-image-triple {
-        gap: 1rem;
-    }
-    
-    .project-loft53-image {
-        min-width: 250px;
-    }
+        
+.project-loft53-image-triple {
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    .project-loft53-image {
-        min-width: 100%;
-    }
-    
-    .project-loft53-image-triple {
-        flex-direction: column;
-        align-items: center;
-    }
+.project-loft53-image-triple {
+    flex-direction: column;
+    align-items: center;
 }
