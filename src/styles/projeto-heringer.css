@@ -1,29 +1,14 @@
 body {
-    padding-top: 280px;
+    padding-top: 220px;
     width: 100%;
     height: 100%;
     
 }
 
-
-/* titulo da seção */
-
-.section-title {
-    text-align: center;
-    font-size: 3rem;
-    color: #D9D9D6;
-    margin: 60px 0 80px;
-    font-weight: 600;
-    position: relative;
-    background-color: #2D2926;
-}
-
-
 /* Estilo base da seção */
 section {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 3rem 10%;
+    border: 1px solid blue;
 }
 
 /* Título principal */
@@ -80,17 +65,6 @@ section {
     display: block;
 }
 
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    .project-heringer-sec1 {
-        flex-direction: column;
-    }
-
-    .project-heringer-content,
-    .project-heringer-image {
-        width: 100%;
-    }
-}
 
 /* Parte rosa do site */
 .project-content-rosa{
@@ -109,56 +83,50 @@ section {
 
 /*--------------------------------------------------*/
 
-/* Container principal */
-.project-heringer-sec3 {
+/*Container imagem texto */
+.project-heringer-section-imgtext {
     display: flex;
     gap: 2rem;
     align-items: center;
     flex-wrap: wrap-reverse;
+    border: 2px solid palegreen;
+}
+
+.project-heringer-image-left{
+    max-width: 606px;
+    max-height: 607px;
 }
 
 /* Conteúdo de texto */
 .project-heringer-content-reverse {
     flex: 1;
     min-width: 300px;
-    padding: 1rem;
+    padding: 5% 15%;/*ajuste dimensão texto*/
+    text-align: justify;
+    border: 1px solid red;
 }
 
 .project-heringer-content-reverse h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #d9d9d6;  /* Cor cinza adicionada */
+    color: #d9d9d6;  
 }
 
 .project-heringer-content-reverse p {
     line-height: 1.6;
-    color: #d9d9d6;  /* Cor cinza adicionada */
+    color: #d9d9d6;  
 }
 
 /* Imagem */
-.project-heringer-image {
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem;
-}
-
-.project-heringer-image img {
-    width: 100%;
+.project-heringer-image-center {
+    display: flex;
+    max-width: 100%;
     height: auto;
-    display: block;
+    border: 2px solid red;
+    padding: 1rem;
+    justify-content: center;
 }
 
-/* Media queries para responsividade */
-@media (max-width: 768px) {
-    .project-heringer-sec3 {
-        flex-direction: column-reverse;
-    }
-
-    .project-heringer-content-reverse,
-    .project-heringer-image {
-        width: 100%;
-    }
-}
 
 /* Parte vinho do site */
 
@@ -166,24 +134,23 @@ section {
     background-color: #912f46;
 }
 
-/*---------------------------------------*/
-
-/* parte final Espaço para Sonhar */
-
 /* Estilo do texto */
 .project-heringer-textcenter {
     text-align: center;
     color: #d9d9d6; 
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    border: 2px solid white;
 }
 
 .project-heringer-p-textcenter {
     text-align: center;
+    display: flex;
+    justify-content: center;
     color: #d9d9d6; 
-    max-width: 800px;
     line-height: 1.6;
-    padding: 0 1rem;
+    padding: 2% 35%;
+    border: 2px solid white;
 }
 
 /* Container das três imagens */
@@ -192,43 +159,23 @@ section {
     justify-content: center;
     gap: 1.5rem;
     padding: 1rem;
-    max-width: 1200px;
     flex-wrap: wrap;
+    border: 2px solid white;
 }
 
-/* Cada container de imagem individual */
+/* Revisar tags abaixo */
+
+
 .project-heringer-image {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
 }
 
-/* Estilo das imagens */
+
 .project-heringer-image img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-    .project-heringer-image-triple {
-        gap: 1rem;
-    }
-    
-    .project-heringer-image {
-        min-width: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    .project-heringer-image {
-        min-width: 100%;
-    }
-    
-    .project-heringer-image-triple {
-        flex-direction: column;
-        align-items: center;
-    }
 }
