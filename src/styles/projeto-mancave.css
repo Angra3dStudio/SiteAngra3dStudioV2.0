@@ -162,3 +162,8 @@ section {
     vertical-align: top;
     border: 2px solid yellow;
 }
+
+
+.section-carousel{
+    border: 2px solid greenyellow;
+}
