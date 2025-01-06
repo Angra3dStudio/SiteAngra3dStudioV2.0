@@ -210,7 +210,7 @@ body, html {
 
 
 
-/*Carousel Responsivo*/
+/* Carousel */
 
 
 .carousel {
@@ -287,15 +287,62 @@ body, html {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Isso fará a imagem cobrir todo o espaço mantendo a proporção */
+    object-fit: cover;
 }
 
+/* Responsividade carousel  */
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .carousel {
+        height: 60vh;
+    }
+
+    .slide {
+        font-size: 36px;
+    }
+
+    .carousel-control {
+        padding: 8px 12px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Mobile (até 767px) */
+@media screen and (max-width: 767px) {
+    .carousel {
+        height: 40vh;
+    }
+
+    .slide {
+        font-size: 24px;
+    }
+
+    .carousel-control {
+        padding: 6px 10px;
+        background: rgba(45, 41, 38, 0.7);
+    }
+
+    .carousel-dots {
+        bottom: 10px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
 
 /* logomarca do about */
 
 .about {
     padding-top: 30px;
     text-align: center;
+    border: 2px solid red;
 }
 
 .about img {
@@ -307,9 +354,10 @@ body, html {
 }
 
 .about figcaption {
-    padding: 80px 35% 120px 35%;
+    padding: 80px 20% 120px 20%;
     color: #D9D9D6;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    border: 2px solid green;
 }
 
 .about p {
@@ -324,7 +372,7 @@ body, html {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
 }
 
 
