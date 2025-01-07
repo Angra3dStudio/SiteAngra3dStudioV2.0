@@ -460,7 +460,7 @@ section {
 }
 
 .project-loft53-image-triple img {
-    width: calc(33.333% - 5px); /* Desconta o gap entre as imagens */
+    width: calc(33.333% - 5px);
     height: auto;
     object-fit: cover;
 }
