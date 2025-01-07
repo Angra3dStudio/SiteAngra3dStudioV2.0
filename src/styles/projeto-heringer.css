@@ -23,159 +23,268 @@ section {
     color: #f2555a;
     text-align: center;
     padding-bottom: 80px; 
-    background-color: #2D2926; /* Cor vermelha adicionada */
+    background-color: #2D2926;
 }
 
-/* Container principal */
-.project-heringer-sec1 {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/*----------------------------------------------------*/
 
-/* Conteúdo de texto */
-.project-heringer-content {
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem;
-}
-
-.project-heringer-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #d9d9d6;  /* Cor cinza adicionada */
-}
-
-.project-heringer-content p {
-    line-height: 1.6;
-    color: #d9d9d6;  /* Cor cinza adicionada */
-}
-
-/* Imagem */
-.project-heringer-image {
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem;
-}
-
-.project-heringer-image img {
+.project-heringer-section-imgtext{
     width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-/* Parte rosa do site */
-.project-content-rosa{
-    background-color: #f2555a;
-}
-
-/* Container de imagens */
-.project-heringer-sec2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    border: 2px solid greenyellow; 
 }
 
-/* Fim da parte rosa */
-
-/*--------------------------------------------------*/
-
-/*Container imagem texto */
-.project-heringer-section-imgtext {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    border: 2px solid palegreen;
-}
-
-.project-heringer-image-left{
-    max-width: 606px;
+.project-heringer-section-imgtext img {
+    width: 50%;
     max-height: 607px;
+    object-fit: contain;
+    border: 2px solid palevioletred;
 }
 
-/* Conteúdo de texto */
-.project-heringer-content-reverse {
-    flex: 1;
-    min-width: 300px;
-    padding: 5% 15%;/*ajuste dimensão texto*/
-    text-align: justify;
-    border: 1px solid red;
+.project-heringer-content-text-elegance{
+    flex: 0 1 50%;
+    min-width: 288px;
+    border: 2px solid yellow; 
 }
 
-.project-heringer-content-reverse h3 {
-    font-size: 1.5rem;
+.project-heringer-content-text-elegance h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #d9d9d6;
+    padding-top: 10%;
     margin-bottom: 1rem;
-    color: #d9d9d6;  
+    text-align: center;
+    border: 2px solid purple;
 }
 
-.project-heringer-content-reverse p {
+.project-heringer-content-text-elegance p {
+    font-size: 1rem;
     line-height: 1.6;
-    color: #d9d9d6;  
-}
-
-/* Imagem */
-.project-heringer-image-center {
-    display: flex;
-    max-width: 100%;
-    height: auto;
+    color: #d9d9d6;
+    text-align: justify;
     border: 2px solid red;
-    padding: 1rem;
-    justify-content: center;
+    padding-bottom: 1.5rem;
 }
 
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .project-heringer-section-imgtext {
+        flex-direction: column;
+    }
 
-/* Parte vinho do site */
+    .project-heringer-content-text-elegance {
+        width: 100%;
+    }
+
+    .project-heringer-section-imgtext img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .project-heringer-content-text-elegance h3 {
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-heringer-content-text-elegance h3 {
+        font-size: 0.8rem;
+
+    }
+
+    .project-heringer-content-text-elegance p {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .project-heringer-content-text-elegance {
+        width:100%;
+        gap: 0;
+        padding: 0 0;
+    }
+    .project-heringer-content-text-elegance h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .project-heringer-content-text-elegance p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .project-heringer-section-imgtext img {
+        width: 100%;
+        margin-top: 1rem;
+        max-height: 300px;
+    }
+}
+
+/*------------------------------------------------*/
+
+.image-center {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-center img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Para tablets */
+@media screen and (max-width: 1024px) {
+    .image-center img {
+        max-width: 90%;
+    }
+}
+
+/* Para tablets menores/mobile */
+@media screen and (max-width: 768px) {
+    .image-center {
+        padding: 15px;
+    }
+    
+    .image-center img {
+        max-width: 100%;
+    }
+}
+
+/* Para smartphones */
+@media screen and (max-width: 480px) {
+    .image-center {
+        padding: 10px;
+    }
+    
+    .image-center img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Para smartphones menores */
+@media screen and (max-width: 320px) {
+    .image-center {
+        padding: 5px;
+    }
+    
+    .image-center img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*------------------------------------------------*/
 
 .project-content-vinho{
     background-color: #912f46;
 }
 
-/* Estilo do texto */
 .project-heringer-textcenter {
     text-align: center;
-    color: #d9d9d6; 
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    border: 2px solid white;
+    color: #d9d9d6;
+    margin-bottom: 20px;
+    border: 2px solid goldenrod;
 }
 
+/* Estilos do parágrafo */
 .project-heringer-p-textcenter {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    color: #d9d9d6; 
+    text-align: justify;
+    color: #d9d9d6;
+    max-width: 480px;
+    margin: 0 auto 40px;
     line-height: 1.6;
-    padding: 2% 35%;
-    border: 2px solid white;
+
+    border: 2px solid green;
 }
 
-/* Container das três imagens */
+/* Container das imagens */
 .project-heringer-image-triple {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-    border: 2px solid white;
-}
-
-/* Revisar tags abaixo */
-
-
-.project-heringer-image {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-}
-
-
-.project-heringer-image img {
+    gap: 5px;
     width: 100%;
     height: auto;
-    display: block;
+    border: 2px solid aqua;
+}
+
+.project-heringer-image-triple img {
+    width: calc(33.333% - 5px);
+    height: auto;
     object-fit: cover;
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .project-heringer-p-textcenter {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+
+    .project-heringer-image-triple {
+        padding: 15px;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .project-heringer-image-triple {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .project-heringer-image-triple img {
+        width: 100%;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .project-heringer-textcenter {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .project-heringer-p-textcenter {
+        font-size: 0.9rem;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .project-heringer-image-triple {
+        padding: 8px;
+        gap: 15px;
+    }
+}
+
+/* Smartphones pequenos */
+@media screen and (max-width: 320px) {
+    .project-heringer-textcenter {
+        font-size: 1.3rem;
+    }
+
+    .project-heringer-p-textcenter {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+
+    .project-heringer-image-triple {
+        padding: 5px;
+        gap: 10px;
+    }
 }

@@ -28,142 +28,403 @@ section {
 
 }
 
-.project-mancave-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #d9d9d6;
-}
-
-.project-mancave-content p {
-    line-height: 1.4;
-    color: #d9d9d6;
-}
+/*-----------------------------*/
 
 .project-mancave-section-imgtext{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    gap: 2rem;
-    align-items: center;
-    border: 2px solid palegreen;
-
+    justify-content: space-between;
+    gap: 3rem;
+    border: 2px solid greenyellow; 
 }
 
-.project-mancave-image-right{
-    justify-items: center;
-    border: 2px solid red;
+.project-mancave-section-imgtext img {
+    width: 50%;
+    max-height: 640px;
+    object-fit: contain;
+    border: 2px solid palevioletred;
 }
 
-.project-mancave-content-reverse{
-    flex: 1;
-    min-width: 300px;
-    padding: 1rem 10%;
-    text-align: justify;
+.project-mancave-content-text-garage{
+    flex: 0 1 50%;
+    min-width: 288px;
+    border: 2px solid yellow; 
 }
 
-.project-mancave-content-reverse h3 {
+.project-mancave-content-text-garage h3 {
     font-size: 1.5rem;
+    font-weight: 500;
+    color: #d9d9d6;
+    padding-top: 10%;
     margin-bottom: 1rem;
-    color: #d9d9d6; 
+    border: 2px solid purple;
 }
 
-.project-mancave-content-reverse p {
+.project-mancave-content-text-garage p {
+    font-size: 1rem;
     line-height: 1.6;
-    color: #d9d9d6; 
+    color: #d9d9d6;
+    text-align: justify;
+    border: 2px solid red;
+    padding-bottom: 1.5rem;
 }
 
-.project-mancave-imgdupla {
-    justify-content: space-around;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 2px solid white;
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .project-mancave-section-imgtext {
+        flex-direction: column;
+    }
+
+    .project-mancave-content-text-garage {
+        width: 100%;
+    }
+
+    .project-mancave-section-imgtext img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .project-mancave-content-text-garage h3 {
+        padding-top: 10px;
+        font-size: 1rem;
+    }
 }
+
+@media (max-width: 480px) {
+    .project-mancave-content-text-garage h3 {
+        font-size: 0.8rem;
+
+    }
+
+    .project-mancave-content-text-garage p {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .project-mancave-content-text-garage {
+        width:100%;
+        gap: 0;
+        padding: 0 0;
+    }
+    .project-mancave-content-text-garage h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .project-mancave-content-text-garage p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .project-mancave-section-imgtext img {
+        width: 100%;
+        margin-top: 1rem;
+        max-height: 300px;
+    }
+}
+
+/*------------------------------------------------*/
 
 .project-mancave-image-dupla {
-    max-width: 606px;
-    max-height: 344px;
+    display: flex;
+    gap: 20px; /* Espaçamento entre as imagens */
+    width: 100%;
+    border: 5px solid goldenrod;
 }
 
-/* Parte rosa do site */
+.project-mancave-image-dupla img {
+    width: 50%;
+    height: auto; 
+    object-fit: cover;
+    border: 2px solid green; 
+}
+
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .project-mancave-image-dupla {
+        flex-direction: column; /* Muda para disposição vertical */
+        gap: 15px; /* Ajusta o espaçamento vertical */
+    }
+
+    .project-mancave-image-dupla img {
+        width: 100%; /* Imagens ocupam toda a largura disponível */
+    }
+}
+
+/*------------------------------------------------*/
+
 .project-content-rosa{
     background-color: #f2555a;
 }
 
 .project-mancave-section-textimg {
-    display: flex;
-    gap: 1rem;
-    align-items: stretch;
-    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    border: 2px solid pink;
-}
-
-/* Conteúdo de texto */
-.project-mancave-content {
-    flex: 0 1 400px;
-    min-width: 200px;
-    padding: 0.5rem;
-    padding-top: 5%;
-    text-align: justify;
-}
-
-.project-mancave-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #d9d9d6;
-    padding-top: 80px;
-}
-
-.project-mancave-content p {
-    line-height: 1.4;
-    color: #d9d9d6;
-
-}
-
-/* Imagem */
-.project-mancave-image-right {
-    max-width: 480px;
-    max-height: 600px;
-}
-
-.project-mancave-image img {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-}
-
-
-.project-mancave-textcenter {
-    text-align: center;
-    color: #d9d9d6; 
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding: 5rem;
-    border: 2px solid green;
-}
-
-.project-mancave-p-textcenter {
-    text-align: center;
-    color: #d9d9d6; 
-    line-height: 1.6;
-    padding: 3.5rem 25%;
-    border: 2px solid green;
-    text-align: justify;
-}
-
-.project-mancave-image-triple {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-    vertical-align: top;
+    justify-content: space-between;
+    gap: 3rem;
+    border: 2px solid greenyellow;
+}
+
+.project-mancave-content-text-rest {
+    flex: 0 1 50%;
+    min-width: 288px;
     border: 2px solid yellow;
 }
 
+.project-mancave-content-text-rest h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #d9d9d6;
+    padding-top: 20%;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 2px solid purple;
+}
 
-.section-carousel{
+.project-mancave-content-text-rest p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d9d9d6;
+    text-align: justify;
+    padding-bottom: 2rem;
+    border: 2px solid red;
+}
+
+.project-mancave-section-textimg img {
+    width: 50%;
+    max-height: 600px;
+    object-fit: contain;
+    border: 2px solid palevioletred;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .project-mancave-section-textimg {
+        flex-direction: column;
+    }
+
+    .project-mancave-content-text-rest {
+        width: 100%;
+    }
+
+    .project-mancave-section-textimg img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .project-mancave-title h2 {
+        font-size: 2rem;
+    }
+
+    .project-mancave-content-text-rest h3 {
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-mancave-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-mancave-content-text-rest h3 {
+        font-size: 1.2rem;
+
+    }
+
+    .project-mancave-content-text-rest p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+}
+
+/*-------------------------------------*/
+
+.project-mancave-textcenter {
+    text-align: center;
+    color: #d9d9d6;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border: 2px solid goldenrod;
+}
+
+/* Estilos do parágrafo */
+.project-mancave-p-textcenter {
+    text-align: center;
+    color: #d9d9d6;
+    max-width: 480px;
+    font-size: 1.1rem;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    border: 2px solid green;
+}
+
+/* Container das imagens */
+.project-mancave-image-triple {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    border: 2px solid aqua;
+}
+
+.project-mancave-image-triple img {
+    width: calc(33.333% - 5px);
+    height: auto;
+    object-fit: cover;
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .project-mancave-p-textcenter {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+
+    .project-mancave-image-triple {
+        padding: 15px;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .project-mancave-image-triple {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .project-mancave-image-triple img {
+        width: 100%;
+    }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .project-mancave-textcenter {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .project-mancave-p-textcenter {
+        font-size: 0.9rem;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .project-mancave-image-triple {
+        padding: 8px;
+        gap: 15px;
+    }
+}
+
+/* Smartphones pequenos */
+@media screen and (max-width: 320px) {
+    .project-mancave-textcenter {
+        font-size: 1.3rem;
+    }
+
+    .project-mancave-p-textcenter {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+
+    .project-mancave-image-triple {
+        padding: 5px;
+        gap: 10px;
+    }
+}
+
+/*-----------------------------------*/
+
+.project-mancave-section-textimg-dream {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
     border: 2px solid greenyellow;
 }
+
+.project-mancave-content-text-dream {
+    flex: 0 1 50%;
+    min-width: 288px;
+    border: 2px solid yellow;
+}
+
+.project-mancave-content-text-dream h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #d9d9d6;
+    padding-top: 10%;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 2px solid purple;
+}
+
+.project-mancave-content-text-dream p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d9d9d6;
+    text-align: justify;
+    padding-bottom: 2rem;
+    border: 2px solid red;
+}
+
+.project-mancave-section-textimg-dream img {
+    width: 50%;
+    max-height: 600px;
+    object-fit: contain;
+    border: 2px solid palevioletred;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .project-mancave-section-textimg-dream {
+        flex-direction: column;
+    }
+
+    .project-mancave-content-text-dream {
+        width: 100%;
+    }
+
+    .project-mancave-section-textimg-dream img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .project-mancave-content-text-dream h3 {
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project-mancave-content-text-dream h3 {
+        font-size: 1.2rem;
+
+    }
+
+    .project-mancave-content-text-dream p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+}
+
+/*--------------------------*/
+
