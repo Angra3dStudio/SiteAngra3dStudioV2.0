@@ -1,0 +1,37 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+
+      - name: Instalar rbenv e ruby-build
+        run: |
+          git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+          echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+          echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+          source ~/.bashrc
+          git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+          echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+          source ~/.bashrc
+
+      - name: Instalar Ruby 3.1.4
+        run: |
+          rbenv install 3.1.4
+          rbenv global 3.1.4
+          touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
+
+      - name: Verificar a instalação do Ruby
+        run: ruby -v
+
+      # Adicione outros passos do seu workflow aqui
