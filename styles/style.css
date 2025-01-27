@@ -632,3 +632,27 @@ body, html {
         margin: 0;
     }
 }
+
+
+/* Animação padrão de fade */
+@keyframes standardFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Classe única para aplicar em textos e imagens */
+.fade-animation {
+    animation: standardFade 1s ease-out forwards;
+}
+
+/* Classe para container/seção que agrupa elementos */
+.fade-section {
+    opacity: 0;
+    animation: standardFade 1s ease-out forwards;
+}
