@@ -343,7 +343,6 @@ body, html {
 .about {
     padding-top: 30px;
     text-align: center;
-    border: 2px solid red;
 }
 
 .about img {
@@ -358,7 +357,6 @@ body, html {
     padding: 80px 20% 120px 20%;
     color: #D9D9D6;
     font-size: 1.5rem;
-    border: 2px solid green;
 }
 
 .about p {

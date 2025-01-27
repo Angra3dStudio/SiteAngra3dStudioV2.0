@@ -8,7 +8,6 @@ body {
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
-    border: 1px solid blue;
 }
 
 /* Título principal */
@@ -36,20 +35,17 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow; 
 }
 
 .project-heringer-section-imgtext img {
     width: 50%;
     max-height: 607px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 .project-heringer-content-text-elegance{
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow; 
 }
 
 .project-heringer-content-text-elegance h3 {
@@ -59,7 +55,6 @@ section {
     padding-top: 10%;
     margin-bottom: 1rem;
     text-align: center;
-    border: 2px solid purple;
 }
 
 .project-heringer-content-text-elegance p {
@@ -67,7 +62,6 @@ section {
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
-    border: 2px solid red;
     padding-bottom: 1.5rem;
 }
 
@@ -198,7 +192,6 @@ section {
     text-align: center;
     color: #d9d9d6;
     margin-bottom: 20px;
-    border: 2px solid goldenrod;
 }
 
 /* Estilos do parágrafo */
@@ -208,8 +201,6 @@ section {
     max-width: 480px;
     margin: 0 auto 40px;
     line-height: 1.6;
-
-    border: 2px solid green;
 }
 
 /* Container das imagens */
@@ -218,7 +209,6 @@ section {
     gap: 5px;
     width: 100%;
     height: auto;
-    border: 2px solid aqua;
 }
 
 .project-heringer-image-triple img {

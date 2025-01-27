@@ -8,7 +8,6 @@ body {
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
-    border: 1px solid blue;
 }
 
 
@@ -38,20 +37,17 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow; 
 }
 
 .project-mancave-section-imgtext img {
     width: 50%;
     max-height: 640px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 .project-mancave-content-text-garage{
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow; 
 }
 
 .project-mancave-content-text-garage h3 {
@@ -60,7 +56,6 @@ section {
     color: #d9d9d6;
     padding-top: 10%;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-mancave-content-text-garage p {
@@ -68,7 +63,6 @@ section {
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
-    border: 2px solid red;
     padding-bottom: 1.5rem;
 }
 
@@ -135,14 +129,12 @@ section {
     display: flex;
     gap: 20px; /* Espaçamento entre as imagens */
     width: 100%;
-    border: 5px solid goldenrod;
 }
 
 .project-mancave-image-dupla img {
     width: 50%;
     height: auto; 
     object-fit: cover;
-    border: 2px solid green; 
 }
 
 /* Media query para telas menores que 768px */
@@ -171,13 +163,11 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow;
 }
 
 .project-mancave-content-text-rest {
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow;
 }
 
 .project-mancave-content-text-rest h3 {
@@ -187,7 +177,6 @@ section {
     padding-top: 20%;
     text-align: center;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-mancave-content-text-rest p {
@@ -196,14 +185,12 @@ section {
     color: #d9d9d6;
     text-align: justify;
     padding-bottom: 2rem;
-    border: 2px solid red;
 }
 
 .project-mancave-section-textimg img {
     width: 50%;
     max-height: 600px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 /* Responsividade para telas menores que 768px */
@@ -255,7 +242,6 @@ section {
     color: #d9d9d6;
     font-size: 1.5rem;
     margin-bottom: 20px;
-    border: 2px solid goldenrod;
 }
 
 /* Estilos do parágrafo */
@@ -266,7 +252,6 @@ section {
     font-size: 1.1rem;
     margin: 0 auto 40px;
     line-height: 1.6;
-    border: 2px solid green;
 }
 
 /* Container das imagens */
@@ -275,7 +260,6 @@ section {
     gap: 5px;
     width: 100%;
     height: auto;
-    border: 2px solid aqua;
 }
 
 .project-mancave-image-triple img {
@@ -356,13 +340,11 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow;
 }
 
 .project-mancave-content-text-dream {
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow;
 }
 
 .project-mancave-content-text-dream h3 {
@@ -372,7 +354,6 @@ section {
     padding-top: 10%;
     text-align: center;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-mancave-content-text-dream p {
@@ -381,14 +362,12 @@ section {
     color: #d9d9d6;
     text-align: justify;
     padding-bottom: 2rem;
-    border: 2px solid red;
 }
 
 .project-mancave-section-textimg-dream img {
     width: 50%;
     max-height: 600px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 /* Responsividade para telas menores que 768px */

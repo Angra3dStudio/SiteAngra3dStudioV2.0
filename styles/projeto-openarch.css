@@ -9,7 +9,6 @@ body {
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
-    border: 1px solid blue;
 }
 
 /* Título principal */
@@ -37,13 +36,11 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow;
 }
 
 .project-openarch-content-text-comfort {
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow;
 }
 
 .project-openarch-content-text-comfort h3 {
@@ -53,7 +50,6 @@ section {
     padding-top: 10%;
     text-align: center;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-openarch-content-text-comfort p {
@@ -61,14 +57,12 @@ section {
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
-    border: 2px solid red;
 }
 
 .project-openarch-section-textimg-comfort img {
     width: 50%;
     max-height: 600px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 /* Responsividade para telas menores que 768px */
@@ -124,14 +118,12 @@ section {
     display: flex;
     gap: 20px; /* Espaçamento entre as imagens */
     width: 100%;
-    border: 5px solid goldenrod;
 }
 
 .project-openarch-image-dupla img {
     width: 50%;
     height: auto; 
     object-fit: cover;
-    border: 2px solid green; 
 }
 
 /* Media query para telas menores que 768px */
@@ -155,7 +147,6 @@ section {
     font-size: 1.5rem;
     padding-top: 80px;
     margin-bottom: 20px;
-    border: 2px solid goldenrod;
 }
 
 /* Estilos do parágrafo */
@@ -167,7 +158,6 @@ section {
     margin: 0 auto 40px;
     line-height: 1.6;
     padding: 5% 10%;
-    border: 2px solid green;
 }
 
 /* Tablets */

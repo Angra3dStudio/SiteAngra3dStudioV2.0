@@ -8,7 +8,6 @@ body {
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
-    border: 1px solid blue;
 }
 
 
@@ -41,13 +40,11 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow;
 }
 
 .project-loft53-content-text {
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow;
 }
 
 .project-loft53-content-text h3 {
@@ -57,7 +54,6 @@ section {
     padding-top: 40%;
     text-align: center;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-loft53-content-text p {
@@ -65,14 +61,12 @@ section {
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
-    border: 2px solid red;
 }
 
 .project-loft53-section-textimg img {
     width: 50%;
     max-height: 600px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 /* Responsividade para telas menores que 768px */
@@ -148,14 +142,12 @@ section {
     display: flex;
     gap: 20px; /* Espaçamento entre as imagens */
     width: 100%;
-    border: 5px solid goldenrod;
 }
 
 .project-loft53-image-dupla img {
     width: 50%;
     height: auto; 
     object-fit: cover;
-    border: 2px solid green; 
 }
 
 /* Media query para telas menores que 768px */
@@ -179,21 +171,18 @@ section {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
-    border: 2px solid greenyellow; 
+    gap: 3rem; 
 }
 
 .project-loft53-section-imgtext img {
     width: 50%;
     max-height: 640px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 .project-loft53-content-text-coffee{
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow; 
 }
 
 .project-loft53-content-text-coffee h3 {
@@ -202,7 +191,6 @@ section {
     color: #d9d9d6;
     padding-top: 10%;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-loft53-content-text-coffee p {
@@ -210,7 +198,6 @@ section {
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
-    border: 2px solid red;
     padding-bottom: 1.5rem;
 }
 
@@ -345,13 +332,11 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid greenyellow;
 }
 
 .project-loft53-content-text-sleep {
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid yellow;
 }
 
 .project-loft53-content-text-sleep h3 {
@@ -361,7 +346,6 @@ section {
     padding-top: 20%;
     text-align: center;
     margin-bottom: 1rem;
-    border: 2px solid purple;
 }
 
 .project-loft53-content-text-sleep p {
@@ -370,14 +354,12 @@ section {
     color: #d9d9d6;
     text-align: justify;
     padding-bottom: 1.5rem;
-    border: 2px solid red;
 }
 
 .project-loft53-section-textimg-sleep img {
     width: 50%;
     max-height: 600px;
     object-fit: contain;
-    border: 2px solid palevioletred;
 }
 
 /* Responsividade para telas menores que 768px */
@@ -437,7 +419,6 @@ section {
     text-align: center;
     color: #d9d9d6;
     margin-bottom: 20px;
-    border: 2px solid goldenrod;
 }
 
 /* Estilos do parágrafo */
@@ -447,7 +428,6 @@ section {
     max-width: 800px;
     margin: 0 auto 40px;
     line-height: 1.6;
-    border: 2px solid green;
 }
 
 /* Container das imagens */
@@ -456,7 +436,6 @@ section {
     gap: 5px;
     width: 100%;
     height: auto;
-    border: 2px solid aqua;
 }
 
 .project-loft53-image-triple img {
