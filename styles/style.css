@@ -22,6 +22,21 @@
     font-weight: normal;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
 h1, h2, h3 {
     font-family: 'Industry Inc', sans-serif;
     font-weight: bold; /* Para garantir que o peso da fonte esteja correto */
