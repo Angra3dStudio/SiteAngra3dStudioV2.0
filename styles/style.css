@@ -34,6 +34,7 @@
 }
 
 .fade-in {
+    padding-top: 180px;
     animation: fadeIn 1s ease-out forwards;
 }
 
@@ -81,6 +82,9 @@ body, html {
 }
 
 @media (max-width: 700px) {
+    .header {
+        height: 80px;
+    }
     .logo {
         display: none; /* Esconde a logo em telas menores que 700px */
     }
@@ -94,7 +98,6 @@ body, html {
     width: 80px;
     height: 80px;
     cursor: pointer;
-    margin-left: 80px;
 }
 
 .menu-btn__burger {
@@ -225,6 +228,32 @@ body, html {
 }
 
 
+/* botões idiomas*/
+
+#a-btn-lang-br{
+    display: flex-inline;
+    padding-right: 23%;
+    justify-content: flex-start;
+}
+
+
+#a-btn-lang-us{
+    display: flex-inline;
+    padding-left: 23%;
+    justify-content: flex-end;
+}
+
+
+.btn-lang-br{
+    display: flex-inline;
+    border-radius: 100%;
+}
+
+
+.btn-lang-us{
+    display: flex-inline;
+    border-radius: 100%; 
+}
 
 /* Carousel */
 
