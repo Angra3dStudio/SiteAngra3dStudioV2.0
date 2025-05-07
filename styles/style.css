@@ -389,6 +389,14 @@ body, html {
     text-align: center;
 }
 
+.about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #D9D9D6;
+    padding: 3rem;
+    border: 2px solid red;
+}
+
 .about img {
     /*padding-top: 1cap;*/
     max-width: 100%;
