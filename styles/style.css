@@ -385,16 +385,15 @@ body, html {
 /* logomarca do about */
 
 .about {
-    padding-top: 30px;
+    padding-top: 60px;
     text-align: center;
 }
 
-.about h2 {
+.about h4 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #D9D9D6;
     padding: 3rem;
-    border: 2px solid red;
 }
 
 .about img {
