@@ -67,7 +67,7 @@ body, html {
     width: 100%;
     height: 180px;
     background: #2D2926;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -79,19 +79,27 @@ body, html {
 .logo {
     max-width: 220px;
     height: auto;
+
 }
 
 @media (max-width: 700px) {
     .header {
-        height: 80px;
+        justify-content: flex-end;
+        align-items: center;
+
     }
     .logo {
         display: none; /* Esconde a logo em telas menores que 700px */
     }
+    .menu-btn {
+        position: static;
+        
+    }
 }
 
 .menu-btn {
-    position: relative;
+    position: absolute;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
