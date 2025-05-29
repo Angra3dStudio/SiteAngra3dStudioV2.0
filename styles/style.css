@@ -402,6 +402,8 @@ body, html {
     margin-bottom: 20px;
     color: #D9D9D6;
     padding: 3rem;
+    border: 2px solid red;
+
 }
 
 .about img {
@@ -410,12 +412,15 @@ body, html {
     height: auto;
     display: block;
     margin: 150px auto;
+    
+
 }
 
 .about figcaption {
-    padding: 80px 20% 120px 20%;
+    padding: 20px 20% 80px 20%;
     color: #D9D9D6;
     font-size: 1.5rem;
+    border: 2px solid red;
 }
 
 .about p {

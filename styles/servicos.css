@@ -9,7 +9,7 @@ body {
 .section-title {
     text-align: center;
     margin-bottom: 50px;
-    padding: 1em 2em 2em;
+    padding: 1em 0.5em 0.5em;
 }
 .section-description {
     text-align: center;
@@ -43,10 +43,9 @@ article {
 
 /* Figure Styling */
 figure {
-    margin: 0 0 4rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
 }
 

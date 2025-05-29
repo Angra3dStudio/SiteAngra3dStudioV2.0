@@ -16,14 +16,15 @@ h1 {
 .about-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 60px 60px 60px;
+    padding: 0px 60px 60px 60px;
+    border: 2px solid red;
 }
 
 .about-section h1 {
     text-align: center;
     margin: 40px;
-    padding-bottom: 40px;
     font-size: 3.5rem;
+    border: 2px solid red;
 }
 
 .about-content {
