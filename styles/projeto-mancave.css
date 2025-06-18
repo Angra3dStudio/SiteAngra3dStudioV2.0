@@ -240,18 +240,21 @@ section {
 .project-mancave-textcenter {
     text-align: center;
     color: #d9d9d6;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.75rem;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Estilos do parágrafo */
 .project-mancave-p-textcenter {
     text-align: center;
     color: #d9d9d6;
-    max-width: 480px;
+    max-width: 767px;
     font-size: 1.1rem;
     margin: 0 auto 40px;
     line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
 }
 
 /* Container das imagens */
