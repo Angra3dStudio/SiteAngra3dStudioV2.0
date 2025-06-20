@@ -50,10 +50,18 @@ figure {
 }
 
 /* Service Images */
-.service-icon {
-    width: 70%; /* Reduzido o tamanho da imagem */
+.service-icon-1 {
+    width: 100%; /* Reduzido o tamanho da imagem */
     height: auto;
+    justify-content: center;
+}
 
+.service-icon-2 {
+    width: 80%; /* Reduzido o tamanho da imagem */
+    height: auto;
+    justify-content: center;
+
+    
 }
 
 /* Service Title */
