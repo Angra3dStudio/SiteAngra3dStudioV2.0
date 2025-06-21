@@ -147,17 +147,18 @@ section {
     font-size: 1.5rem;
     padding-top: 80px;
     margin-bottom: 20px;
+    border: 2px solid #aaaaaa;
 }
 
 /* Estilos do parágrafo */
 .project-openarch-p-textcenter {
     color: #d9d9d6;
-    max-width: 800px;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0 auto 40px;
     line-height: 1.6;
     padding: 5% 10%;
+    border: 2px solid #aaaaaa;
 }
 
 /* Tablets */
