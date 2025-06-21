@@ -14,38 +14,41 @@ body {
 .section-description {
     text-align: center;
     margin-bottom: 50px;
-    padding: 1em 2em 2em;
+    padding: 2rem;
 }
 
 /* Section Title Styling */
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin: 3rem 3rem;
     color: #2D2926;
 }
 
 /* Section Description */
 .section-description {
-    text-align: center;
-    max-width: 800px;
+    text-align: justify;
+    
     margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    padding: 2.5rem;
     color: #2D2926;
     line-height: 1.6;
+    border: 2px solid red;
 }
 
 /* Article Container */
 article {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    border: 2px solid #2D2926; /* Adiciona uma borda ao redor do artigo */
 }
 
 /* Figure Styling */
 figure {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     text-align: center;
 }
 
@@ -70,16 +73,17 @@ figcaption h2 {
     color: #2D2926;
     margin-bottom: 1rem;
     text-align: center;
-    padding-top: 40px;
+    padding: 3rem;
 }
 
 /* Service List */
 figcaption ul {
     list-style-type: disc; /* Mantém os pontos */
-    padding: 0;
+    padding: 0 1em 2.5rem 1em;
     margin: 0;
     text-align: center;
     display: inline-block; /* Ajuda na centralização da lista */
+    font-size: 1.2rem;
 }
 
 figcaption li {
@@ -87,6 +91,7 @@ figcaption li {
     color: #2D2926;
     line-height: 1.6;
     text-align: left; /* Mantém o texto alinhado à esquerda para melhor legibilidade */
+    font-size: 1.2rem;
 }
 
 /* Responsive Design */
