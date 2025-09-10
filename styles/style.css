@@ -402,7 +402,6 @@ body, html {
     margin-bottom: 20px;
     color: #D9D9D6;
     padding: 3rem;
-    border: 2px solid red;
 
 }
 
@@ -420,7 +419,6 @@ body, html {
     padding: 20px 20% 80px 20%;
     color: #D9D9D6;
     font-size: 1.5rem;
-    border: 2px solid red;
 }
 
 .about p {
@@ -535,7 +533,7 @@ body, html {
 
 .social-icons {
     display: flex;
-    gap: 50px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -602,12 +600,12 @@ body, html {
     }
 
     .social-icons {
-        gap: 20px;
+        gap: 10px;
     }
 
     .social-icons img {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
     }
 
     .contact-info h3, .social-links h3 {
