@@ -16,7 +16,6 @@ closeBtn.addEventListener('click', () => {
     menuOpen = false;
 });
 
-
 //Eventos do Carousel
 
 const slides = document.querySelectorAll('.slide');
@@ -51,4 +50,3 @@ dots.forEach((dot, index) => {
 
 // Auto-play
 setInterval(nextSlide, 5000);
-
