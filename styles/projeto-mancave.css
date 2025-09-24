@@ -18,17 +18,10 @@ section {
     margin-bottom: 2rem;
     background-color: #2D2926;
     border: 2px solid green;
-}
-
-.project-mancave-title h2 {
-    font-size: 3.5rem;
-    margin-left: 1rem;
     color: #f2555a;
     text-align: center;
-    padding-bottom: 80px; 
-    background-color: #2D2926;
-    border: 2px solid #aaaaaa;
-
+    padding-bottom: 80px;
+    font-size: 3.5rem; 
 }
 
 /*-----------------------------*/
@@ -46,7 +39,7 @@ section {
 
 .project-mancave-section-imgtext img {
     width: 55%;
-    max-height: 640px;
+    max-height: 900px;
     object-fit: contain;
     border: 2px solid #aaaaaa;
 }
@@ -77,6 +70,15 @@ section {
 
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
+
+    .project-mancave-section-imgtext{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .project-mancave-section-imgtext {
         flex-direction: column;
     }
@@ -87,16 +89,20 @@ section {
 
     .project-mancave-section-imgtext img {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .project-mancave-content-text-garage h3 {
         padding-top: 10px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
+    .project-mancave-content-text-garage {
+        width: 100%;
+    }
+
     .project-mancave-content-text-garage h3 {
         font-size: 0.8rem;
 
@@ -109,12 +115,55 @@ section {
     
 }
 
-@media (max-width: 320px) {
-    .project-mancave-content-text-garage {
-        width:100%;
-        gap: 0;
-        padding: 0 0;
+@media (max-width: 375px) {
+
+    .project-mancave-section-imgtext{
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: space-between;
     }
+
+    .project-mancave-content-text-garage {
+        width:80%;
+        gap: 0;
+        padding: 0 0 0 0;
+    }
+
+    .project-mancave-content-text-garage h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .project-mancave-content-text-garage p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .project-mancave-section-imgtext img {
+        width: 100%;
+        margin-top: 1rem;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .project-mancave-section-imgtext{
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project-mancave-content-text-garage {
+        width:80%;
+        gap: 0;
+        padding: 0 0 0 0;
+    }
+
     .project-mancave-content-text-garage h3 {
         font-size: 1rem;
         width: 100%;
