@@ -1,30 +1,30 @@
 body {
-    padding-top: 220px;
+    padding-top: 30px;
     width: 100%;
     height: 100%;
+    border: 2px solid blue;
 }
 
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
+    border: 2px solid green;
 }
 
 
 /* Título principal */
 .project-loft53-title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     background-color: #2D2926;
-}
-
-.project-loft53-title h2 {
     font-size: 3.5rem;
     margin-left: 1rem;
     color: #f2555a;
     text-align: center;
     padding-bottom: 80px; 
     background-color: #2D2926;
-
+    align-items: center;
 }
+
 /*----------------------------------------------------*/
 
 /* Primeiro Container texto image */
@@ -38,7 +38,6 @@ section {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
 }
 
 .project-loft53-content-text {
@@ -51,8 +50,9 @@ section {
     color: #d9d9d6;
     padding: 15% 10% 15% 10%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
+    border: 2px solid blue;
 }
 
 .project-loft53-content-text p {
@@ -61,6 +61,7 @@ section {
     color: #d9d9d6;
     text-align: justify;
     font-size: 1.5rem;
+    border: 2px solid orange;
 }
 
 .project-loft53-section-textimg img {
@@ -71,6 +72,15 @@ section {
 
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
+    .project-loft53-title h2 {
+        font-size: 5rem;
+    }
+
+    .project-loft53-content-text h3 {
+        ppadding: 10% 15% 10% 15%;
+        font-size: 2.5rem;
+    }
+    
     .project-loft53-section-textimg {
         flex-direction: column;
     }
@@ -84,23 +94,16 @@ section {
         margin-top: 1rem;
     }
 
-    .project-loft53-title h2 {
-        font-size: 2rem;
-    }
-
-    .project-loft53-content-text h3 {
-        padding-top: 10px;
-        font-size: 1.5rem;
-    }
+    
 }
 
 @media (max-width: 480px) {
     .project-loft53-title h2 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     .project-loft53-content-text h3 {
-        font-size: 1.2rem;
+        font-size: 2rem;
 
     }
 
@@ -113,8 +116,8 @@ section {
 
 @media (max-width: 320px) {
     .project-loft53-title h2 {
-        font-size: 1.8rem;
-        width: 90%;
+        font-size: 3rem;
+        width: 100%;
     }
 
     .project-loft53-content-text {
@@ -186,12 +189,13 @@ section {
 }
 
 .project-loft53-content-text-coffee h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
     color: #d9d9d6;
-    padding: 10% 15% 10% 15%;
     margin-bottom: 1rem;
     text-align: center;
+    padding: 10% 15% 10% 15%;
+
 }
 
 .project-loft53-content-text-coffee p {
@@ -218,28 +222,29 @@ section {
     }
 
     .project-loft53-content-text-coffee h3 {
-        padding-top: 10px;
-        font-size: 1rem;
+        padding: 10% 15% 10% 15%;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 480px) {
     .project-loft53-content-text-coffee h3 {
-        font-size: 0.8rem;
+        font-size: 2.5rem;
 
     }
 
     .project-loft53-content-text-coffee p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         width: 100%;
     }
     
 }
 
+
+
 @media (max-width: 320px) {
     .project-loft53-content-text-coffee {
         width:100%;
-        gap: 0;
         padding: 0 0;
     }
     .project-loft53-content-text-coffee h3 {
@@ -307,6 +312,25 @@ section {
     }
 }
 
+
+@media screen and (max-width: 420px) {
+    .project-loft53-content-text h3{
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid purple;
+    }
+
+    .project-loft53-content-text p{
+        padding: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid purple;
+    }
+}
+
 /* Para smartphones menores */
 @media screen and (max-width: 320px) {
     .image-center {
@@ -341,7 +365,7 @@ section {
 }
 
 .project-loft53-content-text-sleep h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
     color: #d9d9d6;
     padding: 15% 10% 15% 10%;
@@ -350,7 +374,7 @@ section {
 }
 
 .project-loft53-content-text-sleep p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
@@ -371,6 +395,7 @@ section {
 
     .project-loft53-content-text-sleep {
         width: 100%;
+        border: 2px solid pink;
     }
 
     .project-loft53-section-textimg-sleep img {
@@ -380,19 +405,19 @@ section {
     }
 
     .project-loft53-content-text-sleep h3 {
-        padding-top: 10px;
-        font-size: 1rem;
+        padding: 10% 15% 10% 15%;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 480px) {
     .project-loft53-content-text-sleep h3 {
-        font-size: 0.8rem;
+        font-size: 2.5rem;
 
     }
 
     .project-loft53-content-text-sleep p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         width: 100%;
     }
     
@@ -420,7 +445,7 @@ section {
     text-align: center;
     color: #d9d9d6;
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 5% 5%
 }
 
@@ -431,8 +456,8 @@ section {
     max-width: 800px;
     margin: 0 auto 40px;
     line-height: 1.6;
-    font-size: 1.5rem;
-    padding: 3% 5%;
+    font-size: 1.8rem;
+    padding: 5% 5%;
 }
 
 /* Container das imagens */
@@ -483,9 +508,10 @@ section {
     }
 
     .project-loft53-p-textcenter {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 0 15px;
         margin-bottom: 30px;
+        text-align: justify;
     }
 
     .project-loft53-image-triple {
