@@ -2,13 +2,11 @@ body {
     padding-top: 30px;
     width: 100%;
     height: 100%;
-    border: 2px solid blue;
 }
 
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
-    border: 2px solid green;
 }
 
 
@@ -51,8 +49,7 @@ section {
     padding: 15% 10% 15% 10%;
     text-align: center;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
-    border: 2px solid blue;
+    font-size: 3rem;
 }
 
 .project-loft53-content-text p {
@@ -61,7 +58,7 @@ section {
     color: #d9d9d6;
     text-align: justify;
     font-size: 1.5rem;
-    border: 2px solid orange;
+    padding: 0% 5% 0% 0%;
 }
 
 .project-loft53-section-textimg img {
@@ -319,7 +316,6 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid purple;
     }
 
     .project-loft53-content-text p{
@@ -327,7 +323,6 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid purple;
     }
 }
 
@@ -395,7 +390,6 @@ section {
 
     .project-loft53-content-text-sleep {
         width: 100%;
-        border: 2px solid pink;
     }
 
     .project-loft53-section-textimg-sleep img {
