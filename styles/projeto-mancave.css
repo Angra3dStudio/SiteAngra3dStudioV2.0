@@ -1,15 +1,12 @@
 body {
     padding-top: 220px;
     width: 100%;
-    height: 100%;
-    border: 2px solid red;
-    
+    height: 100%;   
 }
 
 /* Estilo base da seção */
 section {
     padding: 3rem 10%;
-    border: 2px solid blue;
 }
 
 
@@ -17,7 +14,6 @@ section {
 .project-mancave-title {
     margin-bottom: 2rem;
     background-color: #2D2926;
-    border: 2px solid green;
     color: #f2555a;
     text-align: center;
     padding-bottom: 80px;
@@ -34,20 +30,17 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    border: 2px solid yellow;
 }
 
 .project-mancave-section-imgtext img {
     width: 55%;
     max-height: 900px;
     object-fit: contain;
-    border: 2px solid #aaaaaa;
 }
 
 .project-mancave-content-text-garage{
     flex: 0 1 50%;
     min-width: 288px;
-    border: 2px solid orange;
 }
 
 .project-mancave-content-text-garage h3 {
@@ -57,7 +50,6 @@ section {
     padding: 10% 5%;
     margin-bottom: 1rem;
     text-align: center;
-    border: 2px solid purple;
 }
 
 .project-mancave-content-text-garage p {
