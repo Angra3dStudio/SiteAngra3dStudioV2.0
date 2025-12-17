@@ -31,7 +31,7 @@ section {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -46,19 +46,20 @@ section {
 .project-heringer-content-text-elegance{
     flex: 0 1 50%;
     min-width: 288px;
+    font-size: 1.5rem;
 }
 
 .project-heringer-content-text-elegance h3 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #d9d9d6;
     padding-top: 10%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
     text-align: center;
 }
 
 .project-heringer-content-text-elegance p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #d9d9d6;
     text-align: justify;
@@ -93,7 +94,7 @@ section {
     }
 
     .project-heringer-content-text-elegance p {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         width: 100%;
     }
     
@@ -106,7 +107,7 @@ section {
         padding: 0 0;
     }
     .project-heringer-content-text-elegance h3 {
-        font-size: 1rem;
+        font-size: 1.2 rem;
         width: 100%;
     }
 
@@ -192,6 +193,7 @@ section {
     text-align: center;
     color: #d9d9d6;
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 /* Estilos do parágrafo */
@@ -201,6 +203,8 @@ section {
     max-width: 480px;
     margin: 0 auto 40px;
     line-height: 1.6;
+    padding: 50px;
+    font-size: 1.4rem;
 }
 
 /* Container das imagens */
